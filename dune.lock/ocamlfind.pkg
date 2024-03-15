@@ -30,13 +30,17 @@
   (run %{make} all)
   (when
    %{pkg:ocaml:native}
-   (run %{make} opt))))
+   (run %{make} opt))
+  (run
+   sh
+   -c
+   "sed s#/_build/.sandbox/[^/]*/_private/#/_build/_private/# src/findlib/topfind > src/findlib/topfind.new && mv src/findlib/topfind.new src/findlib/topfind")))
 
 (depends ocaml)
 
 (source
  (fetch
   (url
-   git+https://github.com/gridbugs/ocamlfind#relocatable-relative-path-custom)))
+   git+https://github.com/gridbugs/ocamlfind#relocatable-relative-path-custom-no-stubs)))
 
 (dev)

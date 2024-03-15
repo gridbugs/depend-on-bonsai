@@ -1,6 +1,6 @@
 (lang package 0.1)
 
-(dependency_hash f982a102d6c649c41a59749389910d94)
+(dependency_hash 8fae42c44c4d440276b6fefd156453a2)
 
 (ocaml ocaml-system)
 
@@ -15,10 +15,10 @@
 (expanded_solver_variable_bindings
  (variable_values
   (with-doc false)
-  (sys-ocaml-version 4.14.1)
-  (os-family homebrew)
-  (os-distribution homebrew)
-  (os macos)
+  (sys-ocaml-version 5.0.0)
+  (os-family nixos)
+  (os-distribution nixos)
+  (os linux)
   (opam-version 2.2.0~alpha-vendored)
-  (arch arm64))
- (unset_variables with-test post dev build))
+  (arch x86_64))
+ (unset_variables with-test post enable-ocaml-beta-repository dev build))
