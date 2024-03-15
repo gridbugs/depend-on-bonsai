@@ -1,0 +1,4 @@
+(version 4)
+
+(build
+ (run sh -exc "cc -c $CFLAGS -I/usr/local/include test.c"))

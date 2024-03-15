@@ -1,0 +1,15 @@
+(version 1.6.9)
+
+(build
+ (progn
+  (when
+   %{pkg-self:dev}
+   (run dune subst))
+  (run dune build -p %{pkg-self:name} -j %{jobs})))
+
+(depends ocaml dune base-unix)
+
+(source
+ (fetch
+  (url https://github.com/ocaml-community/cppo/archive/v1.6.9.tar.gz)
+  (checksum md5=d23ffe85ac7dc8f0afd1ddf622770d09)))

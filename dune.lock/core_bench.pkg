@@ -1,0 +1,34 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ ocaml
+ core
+ core
+ core_kernel
+ core_kernel
+ core_unix
+ core_unix
+ ppx_compare
+ ppx_compare
+ ppx_fields_conv
+ ppx_fields_conv
+ ppx_jane
+ ppx_jane
+ ppx_let
+ ppx_let
+ ppx_sexp_conv
+ ppx_sexp_conv
+ textutils
+ textutils
+ dune
+ re)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/core_bench-v0.16.0.tar.gz)
+  (checksum
+   sha256=fbba6bf4d5ab009a478d62d772ef75b132e1aee568273112a585a29c39999ad5)))

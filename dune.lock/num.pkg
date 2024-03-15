@@ -1,0 +1,23 @@
+(version 1.5)
+
+(build
+ (run
+  %{make}
+  PROFILE=release
+  (when
+   (and_absorb_undefined_var
+    (not %{pkg:ocaml:preinstalled})
+    (< %{pkg:ocaml:version} 5.0.0~~))
+   opam-legacy)
+  (when
+   (or_absorb_undefined_var
+    %{pkg:ocaml:preinstalled}
+    (>= %{pkg:ocaml:version} 5.0.0~~))
+   opam-modern)))
+
+(depends ocaml)
+
+(source
+ (fetch
+  (url https://github.com/ocaml/num/archive/v1.5.tar.gz)
+  (checksum md5=b1f9405dfe5f573ea187f122f789ae57)))

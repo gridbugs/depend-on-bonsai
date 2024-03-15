@@ -1,0 +1,30 @@
+(version v0.16.1)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ ocaml
+ async
+ async
+ base
+ base
+ core
+ core
+ ppx_jane
+ ppx_jane
+ ppx_optcomp
+ ppx_optcomp
+ stdio
+ stdio
+ conf-libssl
+ ctypes
+ ctypes-foreign
+ dune
+ dune-configurator)
+
+(source
+ (fetch
+  (url
+   https://github.com/janestreet/async_ssl/archive/refs/tags/v0.16.1.tar.gz)
+  (checksum md5=7e404ed41467b7ac0ef985f5ac6eccd8)))

@@ -1,0 +1,13 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends ocaml core core ppx_jane ppx_jane dune)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/protocol_version_header-v0.16.0.tar.gz)
+  (checksum
+   sha256=9c3c81bd6e378b7a33ede28b6b1691512ee8a299a65387da03b9eb2adabcb25f)))

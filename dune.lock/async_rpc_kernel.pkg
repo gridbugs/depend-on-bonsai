@@ -1,0 +1,23 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ ocaml
+ async_kernel
+ async_kernel
+ core
+ core
+ ppx_jane
+ ppx_jane
+ protocol_version_header
+ protocol_version_header
+ dune)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/async_rpc_kernel-v0.16.0.tar.gz)
+  (checksum
+   sha256=4fe8ced35d51f8a5270180d49385fcde7b33cc8fb5638322049b5350ec84cbb8)))

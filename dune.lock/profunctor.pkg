@@ -1,0 +1,21 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ ocaml
+ base
+ base
+ ppx_jane
+ ppx_jane
+ record_builder
+ record_builder
+ dune)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/profunctor-v0.16.0.tar.gz)
+  (checksum
+   sha256=91f7a1bd948477ec5d336e534b1ed3cb1ac484cecac78c2f44d6da22985e2a83)))

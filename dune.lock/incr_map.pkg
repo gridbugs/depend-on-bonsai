@@ -1,0 +1,31 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ ocaml
+ abstract_algebra
+ abstract_algebra
+ bignum
+ bignum
+ core
+ core
+ diffable
+ diffable
+ incremental
+ incremental
+ ppx_jane
+ ppx_jane
+ ppx_pattern_bind
+ ppx_pattern_bind
+ streamable
+ streamable
+ dune)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/incr_map-v0.16.0.tar.gz)
+  (checksum
+   sha256=a29d13cbc1759714ef49cc398ccfd5548212d1c0ba497552877548c9ce734d67)))

@@ -1,0 +1,11 @@
+(version 1.0.3)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends dune ocaml uchar uutf)
+
+(source
+ (fetch
+  (url https://github.com/aantron/markup.ml/archive/1.0.3.tar.gz)
+  (checksum md5=3609724f5408dff41b1cb43107bc24ef)))

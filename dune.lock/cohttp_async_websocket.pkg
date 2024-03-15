@@ -1,0 +1,30 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ ocaml
+ async
+ async
+ async_ssl
+ async_ssl
+ async_websocket
+ async_websocket
+ core
+ core
+ ppx_jane
+ ppx_jane
+ base64
+ cohttp
+ cohttp-async
+ cohttp-async
+ dune
+ uri-sexp)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/cohttp_async_websocket-v0.16.0.tar.gz)
+  (checksum
+   sha256=786451c7d47cfe1cc54201b168b81949e2d847d562285107f596062e8d3185c9)))

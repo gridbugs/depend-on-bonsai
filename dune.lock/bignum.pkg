@@ -1,0 +1,27 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ ocaml
+ core
+ core
+ ppx_jane
+ ppx_jane
+ splittable_random
+ splittable_random
+ typerep
+ typerep
+ zarith_stubs_js
+ zarith_stubs_js
+ dune
+ num
+ zarith)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/bignum-v0.16.0.tar.gz)
+  (checksum
+   sha256=6f577731f8152d96c86d608289cba3b60e94ddf7b9e8b19565fb0e51a2575541)))

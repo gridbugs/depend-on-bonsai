@@ -1,0 +1,34 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ ocaml
+ base
+ base
+ core
+ core
+ core_kernel
+ core_kernel
+ js_of_ocaml_patches
+ js_of_ocaml_patches
+ ppx_jane
+ ppx_jane
+ stdio
+ stdio
+ base64
+ dune
+ gen_js_api
+ js_of_ocaml
+ js_of_ocaml-ppx
+ lambdasoup
+ tyxml
+ uri)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/virtual_dom-v0.16.0.tar.gz)
+  (checksum
+   sha256=0c6f07894dce56db88d46b3aa4f2cad1a84aeaf0009560a285492f9f2959d565)))

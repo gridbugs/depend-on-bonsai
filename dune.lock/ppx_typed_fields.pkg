@@ -1,0 +1,34 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ ocaml
+ base
+ base
+ core
+ core
+ ppx_compare
+ ppx_compare
+ ppx_enumerate
+ ppx_enumerate
+ ppx_jane
+ ppx_jane
+ ppx_sexp_conv
+ ppx_sexp_conv
+ ppx_string
+ ppx_string
+ sexplib
+ sexplib
+ sexplib0
+ sexplib0
+ dune
+ ppxlib)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/ppx_typed_fields-v0.16.0.tar.gz)
+  (checksum
+   sha256=53339ca08f310446ef58639da72e7a6493f43a48943f0373041b34287824dcb4)))

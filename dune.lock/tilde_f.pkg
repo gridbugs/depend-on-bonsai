@@ -1,0 +1,13 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends ocaml base base ppx_jane ppx_jane dune)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/tilde_f-v0.16.0.tar.gz)
+  (checksum
+   sha256=b059bbe0100d63eb0e6950e04ca82b1e136e35ddd6d69c03f4bd347e3f683dcd)))

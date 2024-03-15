@@ -1,0 +1,27 @@
+(version v0.16.1)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ ocaml
+ async_kernel
+ async_kernel
+ async_rpc_kernel
+ async_rpc_kernel
+ base
+ base
+ core
+ core
+ core_kernel
+ core_kernel
+ ppx_jane
+ ppx_jane
+ dune
+ ppxlib)
+
+(source
+ (fetch
+  (url
+   https://github.com/janestreet/streamable/archive/refs/tags/v0.16.1.tar.gz)
+  (checksum md5=c410b847f5a0f0be3c67b3403af04282)))

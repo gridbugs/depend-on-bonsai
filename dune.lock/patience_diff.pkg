@@ -1,0 +1,13 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends ocaml base base core core ppx_jane ppx_jane dune)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/patience_diff-v0.16.0.tar.gz)
+  (checksum
+   sha256=53759c7458f137db9380a7a7c711bbde6a4655abaad67435083a0f016f42e85c)))

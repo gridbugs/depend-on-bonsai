@@ -1,0 +1,13 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends ocaml core core ppx_jane ppx_jane dune)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/stored_reversed-v0.16.0.tar.gz)
+  (checksum
+   sha256=b05635bb02635eedc8eedb87e66b37b026c6fbcacc48c016a6c67e6032b8a6ab)))

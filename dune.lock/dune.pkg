@@ -1,0 +1,23 @@
+(version 3.14.2)
+
+(build
+ (progn
+  (run ocaml boot/bootstrap.ml -j %{jobs})
+  (run
+   ./_boot/dune.exe
+   build
+   dune.install
+   --release
+   --profile
+   dune-bootstrap
+   -j
+   %{jobs})))
+
+(depends ocaml base-unix base-threads)
+
+(source
+ (fetch
+  (url
+   https://github.com/ocaml/dune/releases/download/3.14.2/dune-3.14.2.tbz)
+  (checksum
+   sha256=e80867cb362b2749d9d9e0cbab2982f98af1daf4459b81164ca0aac6b4e6ace1)))

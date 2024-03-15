@@ -1,0 +1,25 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ ocaml
+ async_kernel
+ async_kernel
+ async_rpc_kernel
+ async_rpc_kernel
+ ppx_jane
+ ppx_jane
+ dune
+ js_of_ocaml
+ js_of_ocaml-ppx
+ uri
+ uri-sexp)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/async_js-v0.16.0.tar.gz)
+  (checksum
+   sha256=9487c01a447adf8c8d02dd5c915f1ab69772a2e4125481f0a755b0e9e7324558)))

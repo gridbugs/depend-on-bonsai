@@ -1,0 +1,13 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends ocaml core core ppx_jane ppx_jane dune uutf)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/textutils_kernel-v0.16.0.tar.gz)
+  (checksum
+   sha256=621e8ecf031ceac0dbb70a5ac4d8ef6add20cf387844402a3fb9e149870ad131)))

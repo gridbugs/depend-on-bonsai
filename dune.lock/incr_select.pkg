@@ -1,0 +1,13 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends ocaml core core incremental incremental ppx_jane ppx_jane dune)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/incr_select-v0.16.0.tar.gz)
+  (checksum
+   sha256=6e34ea0f8cb138525d31a59b820a801c3dadb2e592a31abc5690c3294c5ea614)))

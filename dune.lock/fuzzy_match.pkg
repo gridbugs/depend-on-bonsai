@@ -1,0 +1,13 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends ocaml core core ppx_jane ppx_jane dune)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/fuzzy_match-v0.16.0.tar.gz)
+  (checksum
+   sha256=4a175c1df53f1b93cc69ff01d5cd1e02726611808df696e493aebe47c4fdeb67)))

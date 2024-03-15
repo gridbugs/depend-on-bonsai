@@ -1,0 +1,33 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ ocaml
+ async_js
+ async_js
+ async_kernel
+ async_kernel
+ core
+ core
+ incr_map
+ incr_map
+ incr_select
+ incr_select
+ incremental
+ incremental
+ ppx_jane
+ ppx_jane
+ virtual_dom
+ virtual_dom
+ dune
+ js_of_ocaml
+ js_of_ocaml-ppx)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/incr_dom-v0.16.0.tar.gz)
+  (checksum
+   sha256=199e5d3ab8299832e3c2c3a08db86a0e5859420e88a867f4da331b91d2078c1b)))

@@ -1,0 +1,17 @@
+(version 2.1.2)
+
+(build
+ (progn
+  (when
+   %{pkg-self:dev}
+   (run dune subst))
+  (run dune build -p %{pkg-self:name} -j %{jobs} @install)))
+
+(depends dune ocaml cppo seq)
+
+(source
+ (fetch
+  (url
+   https://github.com/ocaml-community/yojson/releases/download/2.1.2/yojson-2.1.2.tbz)
+  (checksum
+   sha256=59f2f1abbfc8a7ccbdbf608894e5c75e8a76006e34899254446f83e200dfb4f9)))

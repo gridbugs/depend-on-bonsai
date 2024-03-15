@@ -1,0 +1,23 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ ocaml
+ async
+ async
+ core
+ core
+ core_unix
+ core_unix
+ ppx_jane
+ ppx_jane
+ dune)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/ocaml-embed-file-v0.16.0.tar.gz)
+  (checksum
+   sha256=eb278140b41da0cab6a5dfb83f18a85dd305a55946c01ff197dca451273b13a5)))

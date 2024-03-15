@@ -1,0 +1,15 @@
+(version 1.1.2)
+
+(build
+ (progn
+  (when
+   %{pkg-self:dev}
+   (run dune subst))
+  (run dune build -p %{pkg-self:name} -j %{jobs} @install)))
+
+(depends dune ocaml js_of_ocaml-compiler)
+
+(source
+ (fetch
+  (url https://github.com/LexiFi/gen_js_api/archive/refs/tags/v1.1.2.tar.gz)
+  (checksum md5=58ab892f1702400247d692f44215b365)))

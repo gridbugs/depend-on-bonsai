@@ -1,0 +1,24 @@
+(version v0.16.1)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ ocaml
+ core
+ core
+ core_kernel
+ core_kernel
+ janestreet_lru_cache
+ janestreet_lru_cache
+ ppx_jane
+ ppx_jane
+ ppx_optcomp
+ ppx_optcomp
+ dune)
+
+(source
+ (fetch
+  (url
+   https://github.com/janestreet/incremental/archive/refs/tags/v0.16.1.tar.gz)
+  (checksum md5=c1c01831c72847296ce2569d2cc4372f)))

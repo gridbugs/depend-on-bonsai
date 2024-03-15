@@ -1,0 +1,23 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ ocaml
+ async_rpc_kernel
+ async_rpc_kernel
+ cohttp_async_websocket
+ cohttp_async_websocket
+ ppx_jane
+ ppx_jane
+ cohttp-async
+ cohttp-async
+ dune)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/async_rpc_websocket-v0.16.0.tar.gz)
+  (checksum
+   sha256=06b585dd96c290a5f5e6c72bfbe1ff2b4985306423bd4bbdbc707025982b9a7c)))

@@ -1,0 +1,28 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ ocaml
+ base
+ base
+ base_quickcheck
+ base_quickcheck
+ core
+ core
+ ppx_jane
+ ppx_jane
+ sexp_pretty
+ sexp_pretty
+ stdio
+ stdio
+ dune
+ re)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/expect_test_helpers_core-v0.16.0.tar.gz)
+  (checksum
+   sha256=e9e9d20470c0c2028ee495c8b0f9d489347545863306241ab95584ef46e53e8a)))

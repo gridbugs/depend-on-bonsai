@@ -1,0 +1,8 @@
+(version 4)
+
+(build
+ (withenv
+  ((= HOMEBREW_NO_AUTO_UPDATE 1))
+  (run pkg-config --print-errors --exists openssl)))
+
+(depends conf-pkg-config)

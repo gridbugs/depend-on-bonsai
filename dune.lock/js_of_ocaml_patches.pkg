@@ -1,0 +1,13 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends ocaml dune js_of_ocaml js_of_ocaml-ppx)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/js_of_ocaml_patches-v0.16.0.tar.gz)
+  (checksum
+   sha256=72a5b83dcd57a3496dec793fe8c9fbd866ceeca5a2f6cc45b42e33296aaead4c)))

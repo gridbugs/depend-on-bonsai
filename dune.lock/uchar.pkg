@@ -1,0 +1,18 @@
+(version 0.0.2)
+
+(build
+ (progn
+  (run ocaml pkg/git.ml)
+  (run
+   ocaml
+   pkg/build.ml
+   native=%{pkg:ocaml:native}
+   native-dynlink=%{pkg:ocaml:native-dynlink})))
+
+(depends ocaml ocamlbuild)
+
+(source
+ (fetch
+  (url
+   https://github.com/ocaml/uchar/releases/download/v0.0.2/uchar-0.0.2.tbz)
+  (checksum md5=c9ba2c738d264c420c642f7bb1cf4a36)))

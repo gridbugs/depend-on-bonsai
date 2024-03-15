@@ -1,0 +1,12 @@
+(version v0.16.1)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends ocaml dune)
+
+(source
+ (fetch
+  (url
+   https://github.com/janestreet/zarith_stubs_js/archive/refs/tags/v0.16.1.tar.gz)
+  (checksum md5=e6e748e14c7699ad2c3baa8dff6907fa)))

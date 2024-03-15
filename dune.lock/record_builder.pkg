@@ -1,0 +1,13 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends ocaml base base ppx_jane ppx_jane dune)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/record_builder-v0.16.0.tar.gz)
+  (checksum
+   sha256=7370ce4ffd7d21de7e3c3f3a7359e5fa5b6d120c8c6dc0ee7d0e48e620ea6e39)))

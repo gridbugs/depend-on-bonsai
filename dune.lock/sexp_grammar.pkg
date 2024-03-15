@@ -1,0 +1,30 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ ocaml
+ core
+ core
+ ppx_bin_prot
+ ppx_bin_prot
+ ppx_compare
+ ppx_compare
+ ppx_hash
+ ppx_hash
+ ppx_let
+ ppx_let
+ ppx_sexp_conv
+ ppx_sexp_conv
+ ppx_sexp_message
+ ppx_sexp_message
+ dune
+ zarith)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/sexp_grammar-v0.16.0.tar.gz)
+  (checksum
+   sha256=37dacd32dcdd0351ea220f7bcbc7329d25f7da49bd49dc3917b28edc151f7d51)))

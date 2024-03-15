@@ -1,0 +1,43 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ ocaml
+ async
+ async
+ async_unix
+ async_unix
+ core
+ core
+ core_kernel
+ core_kernel
+ core_unix
+ core_unix
+ ppx_here
+ ppx_here
+ ppx_jane
+ ppx_jane
+ ppx_let
+ ppx_let
+ ppx_sexp_conv
+ ppx_sexp_conv
+ stdio
+ stdio
+ virtual_dom
+ virtual_dom
+ dune
+ js_of_ocaml
+ js_of_ocaml-ppx
+ menhirLib
+ ppxlib
+ re
+ sedlex)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/ppx_css-v0.16.0.tar.gz)
+  (checksum
+   sha256=58a8f237e28c0f223e85552f0f1097c9f7a9682fccee61c593dae32c506926ae)))

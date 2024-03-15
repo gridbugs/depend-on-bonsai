@@ -1,0 +1,27 @@
+(version v0.16.1)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ ocaml
+ core
+ core
+ core_kernel
+ core_kernel
+ core_unix
+ core_unix
+ expect_test_helpers_core
+ expect_test_helpers_core
+ patience_diff
+ patience_diff
+ ppx_jane
+ ppx_jane
+ dune
+ re)
+
+(source
+ (fetch
+  (url
+   https://github.com/janestreet/patdiff/archive/refs/tags/v0.16.1.tar.gz)
+  (checksum md5=ed1fd8166e2e99774432c1e28515f37e)))

@@ -1,0 +1,13 @@
+(version v0.16.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends ocaml core core ppx_jane ppx_jane dune)
+
+(source
+ (fetch
+  (url
+   https://ocaml.janestreet.com/ocaml-core/v0.16/files/indentation_buffer-v0.16.0.tar.gz)
+  (checksum
+   sha256=1ac71d3dfd82d264260519e92d04429f99a9209477c22bc9ff655f7787a801a0)))
