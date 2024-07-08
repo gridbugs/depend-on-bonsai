@@ -6,22 +6,13 @@
 (depends
  ocaml
  async_kernel
- async_kernel
- async_rpc_kernel
  async_rpc_kernel
  async_unix
- async_unix
- core
  core
  core_kernel
- core_kernel
- core_unix
  core_unix
  ppx_jane
- ppx_jane
  ppx_log
- ppx_log
- textutils
  textutils
  dune)
 

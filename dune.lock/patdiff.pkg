@@ -6,16 +6,10 @@
 (depends
  ocaml
  core
- core
- core_kernel
  core_kernel
  core_unix
- core_unix
- expect_test_helpers_core
  expect_test_helpers_core
  patience_diff
- patience_diff
- ppx_jane
  ppx_jane
  dune
  re)

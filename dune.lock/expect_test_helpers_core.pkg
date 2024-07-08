@@ -3,22 +3,7 @@
 (build
  (run dune build -p %{pkg-self:name} -j %{jobs}))
 
-(depends
- ocaml
- base
- base
- base_quickcheck
- base_quickcheck
- core
- core
- ppx_jane
- ppx_jane
- sexp_pretty
- sexp_pretty
- stdio
- stdio
- dune
- re)
+(depends ocaml base base_quickcheck core ppx_jane sexp_pretty stdio dune re)
 
 (source
  (fetch

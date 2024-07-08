@@ -6,16 +6,10 @@
 (depends
  ocaml
  async
- async
- base
  base
  core
- core
- ppx_jane
  ppx_jane
  ppx_optcomp
- ppx_optcomp
- stdio
  stdio
  conf-libssl
  ctypes

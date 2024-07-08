@@ -3,19 +3,7 @@
 (build
  (run dune build -p %{pkg-self:name} -j %{jobs}))
 
-(depends
- ocaml
- async_rpc_kernel
- async_rpc_kernel
- core
- core
- ppx_jane
- ppx_jane
- streamable
- streamable
- tilde_f
- tilde_f
- dune)
+(depends ocaml async_rpc_kernel core ppx_jane streamable tilde_f dune)
 
 (source
  (fetch

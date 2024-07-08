@@ -3,7 +3,7 @@
 (build
  (run dune build -p %{pkg-self:name} -j %{jobs}))
 
-(depends ocaml base base ppx_here ppx_here dune ppxlib)
+(depends ocaml base ppx_here dune ppxlib)
 
 (source
  (fetch

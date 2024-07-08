@@ -3,7 +3,7 @@
 (build
  (run dune build -p %{pkg-self:name} -j %{jobs}))
 
-(depends ocaml sexplib0 sexplib0 dune dune-configurator conf-bash)
+(depends ocaml sexplib0 dune dune-configurator conf-bash)
 
 (source
  (fetch

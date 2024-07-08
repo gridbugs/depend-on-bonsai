@@ -16,7 +16,6 @@
  base
  core_unix
  cohttp
- cohttp
  conduit-async
  magic-mime
  logs

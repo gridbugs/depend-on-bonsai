@@ -3,15 +3,7 @@
 (build
  (run dune build -p %{pkg-self:name} -j %{jobs}))
 
-(depends
- ocaml
- base
- base
- ppx_jane
- ppx_jane
- record_builder
- record_builder
- dune)
+(depends ocaml base ppx_jane record_builder dune)
 
 (source
  (fetch

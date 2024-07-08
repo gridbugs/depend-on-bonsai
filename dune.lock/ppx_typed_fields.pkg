@@ -6,22 +6,13 @@
 (depends
  ocaml
  base
- base
- core
  core
  ppx_compare
- ppx_compare
- ppx_enumerate
  ppx_enumerate
  ppx_jane
- ppx_jane
- ppx_sexp_conv
  ppx_sexp_conv
  ppx_string
- ppx_string
  sexplib
- sexplib
- sexplib0
  sexplib0
  dune
  ppxlib)

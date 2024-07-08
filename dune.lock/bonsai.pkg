@@ -6,77 +6,43 @@
 (depends
  ocaml
  async
- async
- async_durable
  async_durable
  async_extra
- async_extra
- async_js
  async_js
  async_kernel
- async_kernel
- async_rpc_kernel
  async_rpc_kernel
  async_rpc_websocket
- async_rpc_websocket
- babel
  babel
  base
- base
- core
  core
  core_bench
- core_bench
- core_kernel
  core_kernel
  core_unix
- core_unix
- expect_test_helpers_core
  expect_test_helpers_core
  fuzzy_match
- fuzzy_match
- incr_dom
  incr_dom
  incr_map
- incr_map
- indentation_buffer
  indentation_buffer
  ordinal_abbreviation
- ordinal_abbreviation
- patdiff
  patdiff
  polling_state_rpc
- polling_state_rpc
- ppx_css
  ppx_css
  ppx_here
- ppx_here
- ppx_jane
  ppx_jane
  ppx_let
- ppx_let
- ppx_pattern_bind
  ppx_pattern_bind
  ppx_typed_fields
- ppx_typed_fields
- profunctor
  profunctor
  sexp_grammar
- sexp_grammar
- sexplib0
  sexplib0
  textutils
- textutils
- virtual_dom
  virtual_dom
  base64
- cohttp-async
  cohttp-async
  dune
  gen_js_api
  js_of_ocaml
  js_of_ocaml-ppx
- ocaml-embed-file
  ocaml-embed-file
  ppxlib
  re

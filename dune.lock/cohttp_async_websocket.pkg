@@ -6,18 +6,12 @@
 (depends
  ocaml
  async
- async
- async_ssl
  async_ssl
  async_websocket
- async_websocket
  core
- core
- ppx_jane
  ppx_jane
  base64
  cohttp
- cohttp-async
  cohttp-async
  dune
  uri-sexp)

@@ -1,4 +1,4 @@
-(version 0.14.2)
+(version 0.14.3+dune)
 
 (build
  (progn
@@ -19,6 +19,6 @@
 
 (source
  (fetch
-  (url git+https://github.com/gridbugs/ocamlbuild#without-examples)))
-
-(dev)
+  (url
+   https://github.com/Leonidas-from-XIV/ocamlbuild/releases/download/0.14.3%2Bdune/ocamlbuild-0.14.3+dune.tar.gz)
+  (checksum md5=bf9faefb3959f9f288e1f6e70906690f)))

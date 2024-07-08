@@ -6,16 +6,10 @@
 (depends
  ocaml
  base
- base
- core
  core
  core_kernel
- core_kernel
- js_of_ocaml_patches
  js_of_ocaml_patches
  ppx_jane
- ppx_jane
- stdio
  stdio
  base64
  dune

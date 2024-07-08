@@ -6,20 +6,12 @@
 (depends
  ocaml
  abstract_algebra
- abstract_algebra
- bignum
  bignum
  core
- core
- diffable
  diffable
  incremental
- incremental
- ppx_jane
  ppx_jane
  ppx_pattern_bind
- ppx_pattern_bind
- streamable
  streamable
  dune)
 

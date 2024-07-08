@@ -6,16 +6,10 @@
 (depends
  ocaml
  async_kernel
- async_kernel
- async_rpc_kernel
  async_rpc_kernel
  core
- core
- core_kernel
  core_kernel
  diffable
- diffable
- ppx_jane
  ppx_jane
  dune)
 

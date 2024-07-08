@@ -6,14 +6,9 @@
 (depends
  ocaml
  core
- core
- core_kernel
  core_kernel
  core_unix
- core_unix
  ppx_jane
- ppx_jane
- textutils_kernel
  textutils_kernel
  dune
  uutf)

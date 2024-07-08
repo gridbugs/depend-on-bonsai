@@ -1,3 +1,9 @@
-(lang dune 3.13)
+(lang dune 3.15)
+
 (lock_dir
+ (repositories upstream1 overlay)
  (constraints ocaml-system))
+(repository
+ (name upstream1)
+ (source
+  "git+https://github.com/ocaml/opam-repository#62c27c9896e706181b40cc02e7bc1c744c709fd7"))

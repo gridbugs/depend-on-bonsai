@@ -6,18 +6,11 @@
 (depends
  ocaml
  core
- core
- ppx_bin_prot
  ppx_bin_prot
  ppx_compare
- ppx_compare
- ppx_hash
  ppx_hash
  ppx_let
- ppx_let
  ppx_sexp_conv
- ppx_sexp_conv
- ppx_sexp_message
  ppx_sexp_message
  dune
  zarith)

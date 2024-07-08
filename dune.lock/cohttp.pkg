@@ -9,7 +9,6 @@
 
 (depends
  ocaml
- base-bytes
  dune
  re
  uri

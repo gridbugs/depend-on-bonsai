@@ -3,7 +3,7 @@
 (build
  (run dune build -p %{pkg-self:name} -j %{jobs}))
 
-(depends ocaml base base ppx_base ppx_base sexplib sexplib dune re)
+(depends ocaml base ppx_base sexplib dune re)
 
 (source
  (fetch

@@ -6,14 +6,9 @@
 (depends
  ocaml
  base
- base
- ppx_here
  ppx_here
  ppx_sexp_conv
- ppx_sexp_conv
  ppx_sexp_message
- ppx_sexp_message
- sexplib
  sexplib
  dune
  ppxlib)

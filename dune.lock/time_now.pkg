@@ -3,19 +3,7 @@
 (build
  (run dune build -p %{pkg-self:name} -j %{jobs}))
 
-(depends
- ocaml
- base
- base
- jane-street-headers
- jane-street-headers
- jst-config
- jst-config
- ppx_base
- ppx_base
- ppx_optcomp
- ppx_optcomp
- dune)
+(depends ocaml base jane-street-headers jst-config ppx_base ppx_optcomp dune)
 
 (source
  (fetch

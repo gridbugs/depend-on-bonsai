@@ -3,17 +3,7 @@
 (build
  (run dune build -p %{pkg-self:name} -j %{jobs}))
 
-(depends
- ocaml
- async_kernel
- async_kernel
- core
- core
- core_kernel
- core_kernel
- ppx_jane
- ppx_jane
- dune)
+(depends ocaml async_kernel core core_kernel ppx_jane dune)
 
 (source
  (fetch

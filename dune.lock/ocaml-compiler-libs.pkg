@@ -7,7 +7,7 @@
    (run dune subst))
   (run dune build -p %{pkg-self:name} -j %{jobs} @install)))
 
-(depends dune ocaml ocaml)
+(depends dune ocaml)
 
 (source
  (fetch

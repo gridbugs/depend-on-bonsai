@@ -18,7 +18,15 @@
   --with-base-threads
   %{pkg:base-threads:installed}))
 
-(depends ocaml ocamlfind ocamlbuild topkg)
+(depends
+ ocaml
+ ocamlfind
+ ocamlbuild
+ topkg
+ js_of_ocaml
+ fmt
+ cmdliner
+ base-threads)
 
 (source
  (fetch

@@ -6,16 +6,10 @@
 (depends
  ocaml
  async_kernel
- async_kernel
- async_rpc_kernel
  async_rpc_kernel
  base
- base
- core
  core
  core_kernel
- core_kernel
- ppx_jane
  ppx_jane
  dune
  ppxlib)

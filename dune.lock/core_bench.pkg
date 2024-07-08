@@ -6,22 +6,13 @@
 (depends
  ocaml
  core
- core
- core_kernel
  core_kernel
  core_unix
- core_unix
- ppx_compare
  ppx_compare
  ppx_fields_conv
- ppx_fields_conv
- ppx_jane
  ppx_jane
  ppx_let
- ppx_let
  ppx_sexp_conv
- ppx_sexp_conv
- textutils
  textutils
  dune
  re)

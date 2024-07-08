@@ -6,20 +6,12 @@
 (depends
  ocaml
  async_js
- async_js
- async_kernel
  async_kernel
  core
- core
- incr_map
  incr_map
  incr_select
- incr_select
- incremental
  incremental
  ppx_jane
- ppx_jane
- virtual_dom
  virtual_dom
  dune
  js_of_ocaml

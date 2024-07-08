@@ -3,7 +3,7 @@
 (build
  (run dune build -p %{pkg-self:name} -j %{jobs}))
 
-(depends ocaml base base dune)
+(depends ocaml base dune)
 
 (source
  (fetch

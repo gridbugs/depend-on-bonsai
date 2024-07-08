@@ -6,10 +6,7 @@
 (depends
  ocaml
  async_kernel
- async_kernel
  async_rpc_kernel
- async_rpc_kernel
- ppx_jane
  ppx_jane
  dune
  js_of_ocaml

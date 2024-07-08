@@ -6,24 +6,14 @@
 (depends
  ocaml
  core
- core
- core_kernel
  core_kernel
  expect_test_helpers_core
- expect_test_helpers_core
- jane-street-headers
  jane-street-headers
  jst-config
- jst-config
- ocaml_intrinsics
  ocaml_intrinsics
  ppx_jane
- ppx_jane
- ppx_optcomp
  ppx_optcomp
  sexplib
- sexplib
- timezone
  timezone
  base-threads
  dune

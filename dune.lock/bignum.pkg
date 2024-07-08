@@ -6,14 +6,9 @@
 (depends
  ocaml
  core
- core
- ppx_jane
  ppx_jane
  splittable_random
- splittable_random
  typerep
- typerep
- zarith_stubs_js
  zarith_stubs_js
  dune
  num

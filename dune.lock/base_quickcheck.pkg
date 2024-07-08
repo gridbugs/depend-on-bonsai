@@ -6,18 +6,11 @@
 (depends
  ocaml
  base
- base
- ppx_base
  ppx_base
  ppx_fields_conv
- ppx_fields_conv
- ppx_let
  ppx_let
  ppx_sexp_message
- ppx_sexp_message
  ppx_sexp_value
- ppx_sexp_value
- splittable_random
  splittable_random
  dune
  ppxlib)

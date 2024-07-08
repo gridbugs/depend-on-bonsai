@@ -6,14 +6,9 @@
 (depends
  ocaml
  core
- core
- core_kernel
  core_kernel
  janestreet_lru_cache
- janestreet_lru_cache
  ppx_jane
- ppx_jane
- ppx_optcomp
  ppx_optcomp
  dune)
 

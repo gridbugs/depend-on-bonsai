@@ -6,26 +6,15 @@
 (depends
  ocaml
  async
- async
- async_unix
  async_unix
  core
- core
- core_kernel
  core_kernel
  core_unix
- core_unix
- ppx_here
  ppx_here
  ppx_jane
- ppx_jane
- ppx_let
  ppx_let
  ppx_sexp_conv
- ppx_sexp_conv
  stdio
- stdio
- virtual_dom
  virtual_dom
  dune
  js_of_ocaml

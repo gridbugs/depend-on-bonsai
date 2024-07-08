@@ -3,19 +3,7 @@
 (build
  (run dune build -p %{pkg-self:name} -j %{jobs}))
 
-(depends
- ocaml
- base
- base
- ppx_here
- ppx_here
- ppx_inline_test
- ppx_inline_test
- stdio
- stdio
- dune
- ppxlib
- re)
+(depends ocaml base ppx_here ppx_inline_test stdio dune ppxlib re)
 
 (source
  (fetch

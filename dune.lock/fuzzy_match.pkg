@@ -3,7 +3,7 @@
 (build
  (run dune build -p %{pkg-self:name} -j %{jobs}))
 
-(depends ocaml core core ppx_jane ppx_jane dune)
+(depends ocaml core ppx_jane dune)
 
 (source
  (fetch
